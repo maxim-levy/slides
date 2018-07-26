@@ -7,8 +7,8 @@
 
 
 \title[NuCypher]{NuCypher}
-\author[<fname>]{<fname lname>, <title>}
-\date[<dd Mon yyyy]{<event>, <dd Mon yyyy>}
+\author[Derek Pierre]{Derek Pierre, Business Development Lead}
+\date[16 Aug 2018]{Target Vendor Day, 16 Aug 2018}
 
 \begin{document}
     \begin{frame}
@@ -19,15 +19,25 @@
         \end{figure}
     \end{frame}
 
+%    \begin{frame}
+%      \frametitle{Problem}
+%      \framesubtitle{Prevalence of Data Breaches}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=6cm]{pdf/data-breaches.pdf}
+%        \end{figure}
+
+%        {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
+%    \end{frame}
+
     \begin{frame}
-      \frametitle{Problem}
-      \framesubtitle{Data Breaches}
+      \frametitle{Impact of Data Breaches}
         \begin{figure}
             \centering
-            \includegraphics[height=6cm]{pdf/data-breaches.pdf}
+            \includegraphics[height=6.5cm]{pdf/impact-of-data-breaches.pdf}
         \end{figure}
 
-        {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
+        {\tiny Source: IBM 2018 Cost of a Data Breach Study: Global Overview, \url{https://www.ibm.com/security/data-breach} \par}
     \end{frame}
 
     \begin{frame}
@@ -62,7 +72,7 @@
             \includegraphics[height=5cm]{pdf/pre-kms.pdf}
         \end{figure}
 
-        Advantages
+        Benefits
         \begin{itemize}
             \item Data not decrypted to facilitate sharing
             \item Scalable and performant
@@ -73,28 +83,9 @@
 
     \begin{frame}
         \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Encryption}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/encrypt.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Access delegation}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/delegate.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Decryption}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/decrypt.pdf}
+            \includegraphics[height=5.4cm]{pdf/centralized-consolidated.pdf}
         \end{figure}
     \end{frame}
 
@@ -103,32 +94,30 @@
         \framesubtitle{Using threshold split-key re-encryption (Umbral)}
         \begin{figure}
             \centering
-            \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
+            \includegraphics[height=6.5cm]{pdf/decrypt-umbral-with-note.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized KMS: Token}
-        \framesubtitle{Purpose}
-        \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work)
-            \item Proof of Stake for minting new coins according to the mining schedule
-            \item Security deposit to be at stake against malicious behavior of nodes
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Multi-tenant, Multi-source Encrypted Data Lake}
+        \frametitle{Blockchain Agnostic}
         \begin{figure}
             \centering
-            \includegraphics[height=7.5cm]{pdf/data-lake.pdf}
+            \includegraphics[height=6cm]{pdf/blockchains.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Encrypted file sharing}
+        \framesubtitle{Data Marketplaces / Data Exchanges}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/content-multi-currency.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
+        \framesubtitle{Auditable, Access-Controlled Data Sharing}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
@@ -137,26 +126,26 @@
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Encrypted multi-user chats}
+        \framesubtitle{Supply Chain Secure Data Sharing}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{pdf/chats.pdf}
+            \includegraphics[height=6.5cm]{pdf/supply-chain.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Decentralized Access-Controlled Content}
+        \framesubtitle{Scalable, Secure IOT Updates}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/content.pdf}
+            \includegraphics[height=6cm]{pdf/iot-updates.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
       \frametitle{Early Users}
       \begin{figure}
-           \includegraphics[width=10.5cm]{pdf/projects.pdf}
+           \includegraphics[width=13cm]{pdf/projects.pdf}
       \end{figure}
     \end{frame}
 
@@ -168,16 +157,18 @@
            \item Reduce the value of data by obfuscating it
        \end{itemize}
 
-       Multi-Party Computation
+       Multi-Party Computation (MPC)
        \begin{itemize}
+           \item Early Research Stage
            \item Slow Performance
        \end{itemize}
       
-       Fully Homomorphic Encryption
+       Fully Homomorphic Encryption (FHE)
        \begin{itemize}
+           \item Early Research Stage
            \item Slow Peformance
            \begin{itemize}
-               \item NuCypher has made investments in this area
+               \item \emph{NuCypher has made investments in this area}
            \end{itemize}
        \end{itemize}
        
@@ -196,16 +187,22 @@
         Founders
         \begin{figure}
             \centering
-            \includegraphics[width=5cm]{pdf/founders.pdf}
+            \includegraphics[height=3.5cm]{pdf/founders-from-website.pdf}
         \end{figure}
-
         Advisors
         \begin{figure}
             \centering
-            \includegraphics[width=5cm]{pdf/advisors.pdf}
+            \includegraphics[height=2.7cm]{pdf/advisors-from-website.pdf}
         \end{figure}
-
-        9 employees
+    \end{frame}
+    
+    \begin{frame}
+      \frametitle{Team}
+      Employees
+      \begin{figure}
+        \centering
+        \includegraphics[height=5cm]{pdf/employees.pdf}
+      \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -219,6 +216,10 @@
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
         Github: \url{https://github.com/nucypher}
+
+        PyUmbral on Github: \url{https://github.com/nucypher/pyUmbral}
+
+        Demo Network: \url{https://github.com/nucypher/mock-net}
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
@@ -241,6 +242,14 @@
           \item Code: \url{https://github.com/nucypher/pyUmbral/}
           \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
       \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: Fully Homomorphic Encryption}
+      \begin{figure}
+        \centering
+        \includegraphics[height=5cm]{pdf/fhe.pdf}
+      \end{figure}
     \end{frame}
 \end{document}
 
