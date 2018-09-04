@@ -16,25 +16,23 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Problem}
-      \framesubtitle{Data Breaches}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6cm]{pdf/data-breaches.pdf}
-        \end{figure}
-
-        {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
+      \frametitle{NuCypher Overview}
+        \begin{itemize}
+            \item Use cryptography to build the tools \& infrastructure to preserve data privacy
+            \item Privacy-preserving solutions for distributed applications
+              \begin{itemize}
+                  \item Proxy Re-encryption (PRE)
+                  \begin{itemize}
+                    \item Secure data-sharing and access control of encrypted data
+                  \end{itemize}
+                  \item Fully Homomorphic Encryption (FHE)
+                  \begin{itemize}
+                    \item Perform arbitrary operations on encrypted data
+                  \end{itemize}
+              \end{itemize}
+            \item Blockchain \& Private Deployments
+        \end{itemize}
     \end{frame}
-
-%    \begin{frame}
-%      \frametitle{Impact of Data Breaches}
-%        \begin{figure}
-%            \centering
-%            \includegraphics[height=6.5cm]{pdf/impact-of-data-breaches.pdf}
-%        \end{figure}
-%
-%        {\tiny Source: IBM 2018 Cost of a Data Breach Study: Global Overview, \url{https://www.ibm.com/security/data-breach} \par}
-%    \end{frame}
 
     \begin{frame}
         \frametitle{Public Key Encryption (PKE)}
@@ -85,22 +83,22 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Roadmap}
-       Fully Homomorphic Encryption
+      \frametitle{Fully Homomorphic Encryption}
+       \framesubtitle{nuFHE Library}
        \begin{itemize}
-           \item Early Research Stage
-           \item Slow Peformance
-           \begin{itemize}
-               \item \emph{NuCypher has invested efforts in this area}
-                 \begin{itemize}
-                   \item nuFHE library achieved 100x performance over TFHE’s benchmarks
-                 \end{itemize}
-           \end{itemize}
+           \item GPU implementation of fully homomorphic encryption
+           \item Uses either FFT or integer NTT
+           \item GitHub: \url{https://github.com/nucypher/nufhe}
+           \item Achieved 100x performance over TFHE benchmarks
+           \begin{figure}
+               \includegraphics[width=10.5cm]{pdf/nufhe-benchmarks.pdf}
+           \end{figure}
        \end{itemize}
      \end{frame}
     
     \begin{frame}
       \frametitle{Investors}
+        \framesubtitle{>\$15M in Venture Funding}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/investors.pdf}
@@ -109,16 +107,9 @@
 
     \begin{frame}
       \frametitle{Team}
-        Founders
         \begin{figure}
             \centering
-            \includegraphics[height=3.5cm]{pdf/founders.pdf}
-        \end{figure}
-
-        Advisors
-        \begin{figure}
-            \centering
-            \includegraphics[height=2.7cm]{pdf/advisors.pdf}
+            \includegraphics[width=15.6cm]{pdf/company.pdf}
         \end{figure}
     \end{frame}
 
@@ -202,14 +193,6 @@
            \end{itemize}
        \end{itemize}
      \end{frame}
-
-    \begin{frame}
-      \frametitle{Appendix: Employees}
-      \begin{figure}
-        \centering
-        \includegraphics[height=5cm]{pdf/employees.pdf}
-      \end{figure}
-    \end{frame}
 
 \end{document}
 
